@@ -1,0 +1,50 @@
+// Primary colors
+// Naming convention based on position in color wheel
+// 30 - 210: warm - mid - cool
+// 210 - 30: cool - mid - warm
+$c-cyan-w-400: 179 62% 43%;
+$c-yellow-m-300: 71 73% 54%;
+
+// Neutral colors
+$c-cyan-c-100: 204 43% 93%; // bgc body
+$c-blue-cyan-300: 218 22% 67%; // c body
+$c-white-000: 0 0% 100%;
+
+// Color map for generating color utility classes
+$utility-color: (
+);
+
+// Color map for generating custom color properties
+$contextual-color: (
+  "color": (
+    "body": $c-white-000,
+    "text": $c-blue-cyan-300,
+    "price-text": $c-cyan-c-100,
+    "list-text": $c-cyan-c-100,
+    "misc-title": $c-yellow-m-300,
+    "main-title": $c-cyan-w-400,
+  ),
+  "background-color": ( 
+    "body": $c-cyan-c-100,
+    "item-top": $c-white-000,
+    "item-left": $c-cyan-w-400,
+    "item-right": $c-cyan-w-400 / 0.75,
+    "cta": $c-yellow-m-300,
+  ),
+);
+
+// Theme map for generating theme classes
+$theme-color: (
+  "dark": (
+    "color": (
+    ),
+    "background-color": (
+    ),
+  ),
+  "light": (
+    "color": (
+    ),
+    "background-color": (
+    ),
+  ),
+);
